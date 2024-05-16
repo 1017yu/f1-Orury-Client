@@ -75,7 +75,7 @@ function OneReview({ list, mutate }: OneReviewProps) {
   };
 
   const handlePoint = async (
-    type: 'help' | 'interest' | 'like' | 'thumb' | 'angry',
+    type: 'wantToGo' | 'helped' | 'great' | 'funny',
   ) => {
     if (type === undefined) return;
     if (reviewReaction.my_reaction === type) {
@@ -103,7 +103,7 @@ function OneReview({ list, mutate }: OneReviewProps) {
         <div className="flex gap-2">
           <Avatar
             className="w-8 h-8"
-            src={writer.profileImage}
+            src={writer.profile_image}
             alt={writer.nickname}
           />
           <span className="text-m font-bold">{writer.nickname}</span>

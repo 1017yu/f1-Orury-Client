@@ -5,16 +5,15 @@ import { v4 } from 'uuid';
 import { useMemo } from 'react';
 
 export enum IconChip {
-  interest = 1,
-  like = 2,
-  help = 3,
-  thumb = 4,
-  angry = 5,
+  wantToGo = 1,
+  helped = 2,
+  great = 3,
+  funny = 4,
 }
 
 function getItem(
   item: {
-    type: 'help' | 'interest' | 'like' | 'thumb' | 'angry';
+    type: 'wantToGo' | 'helped' | 'great' | 'funny';
     count: number;
   }[],
   myReaction: string | null,

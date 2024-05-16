@@ -25,7 +25,7 @@ export interface FirstReviewModalProps {
 
 export interface RadioGroupRatingProps {
   isOpen: boolean;
-  handlePoint: (type: 'help' | 'interest' | 'like' | 'thumb' | 'angry') => void;
+  handlePoint: (type: 'wantToGo' | 'helped' | 'great' | 'funny') => void;
 }
 
 export interface ReviewListProps extends ResetAPI {
@@ -38,7 +38,7 @@ export interface OneReviewProps extends ResetAPI {
 
 export interface IconChipListProps {
   item: ReactionType[];
-  myReaction: 'help' | 'interest' | 'like' | 'thumb' | 'angry' | null;
+  myReaction: 'wantToGo' | 'helped' | 'great' | 'funny'| null;
 }
 
 export interface ReviewStoreProps {

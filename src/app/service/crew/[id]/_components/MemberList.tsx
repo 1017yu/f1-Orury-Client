@@ -1,6 +1,6 @@
 import { ChevronLeft } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import getCrewMembers from '../api/getCrewMembers';
+import {getCrewMembers} from '../api/getCrewMembers';
 import { CrewMembersProps } from '@/types/crew/crew';
 import Image from 'next/image';
 import crewLeader from '$/images/crewLeader.png';

@@ -52,11 +52,7 @@ export default function RadioGroupRating({
           };
           handlePoint(
             IconChip[target.value] as
-              | 'help'
-              | 'interest'
-              | 'like'
-              | 'thumb'
-              | 'angry',
+              | 'wantToGo' | 'helped' | 'great' | 'funny',
           );
         }}
         name="highlight-selected-only"
